@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # get "pages/home"
   resources :posts, only: [:index, :create, :update, :destroy] # GET and POST endpoints
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

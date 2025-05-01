@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .endpoint {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Documentation for CRUD Operations</h1>
+
+    <h2>1. GET</h2>
+    <ul>
+        <li><strong>Description:</strong> Fetches data from the server.</li>
+        <li><strong>Example Usage:</strong> Retrieve a list of resources or a specific resource.</li>
+        <li><strong>Endpoint:</strong> <span class="endpoint">http://localhost:3000/posts</span></li>
+        <li><strong>Response:</strong> JSON object containing the requested data.</li>
+    </ul>
+
+    <h2>2. POST</h2>
+    <ul>
+        <li><strong>Description:</strong> Creates a new resource on the server.</li>
+        <li><strong>Example Usage:</strong> Submit data to create a new entry.</li>
+        <li><strong>Endpoint:</strong> <span class="endpoint">http://localhost:3000/posts</span></li>
+        <li><strong>Request Body:</strong> JSON object containing the data for the new resource.</li>
+        <li><strong>Response:</strong> JSON object with the created resource and status.</li>
+    </ul>
+
+    <h2>3. PUT</h2>
+    <ul>
+        <li><strong>Description:</strong> Updates an existing resource on the server.</li>
+        <li><strong>Example Usage:</strong> Modify data of an existing entry.</li>
+        <li><strong>Endpoint:</strong> <span class="endpoint">http://localhost:3000/posts/:id</span></li>
+        <li><strong>Request Body:</strong> JSON object containing the updated data.</li>
+        <li><strong>Response:</strong> JSON object with the updated resource and status.</li>
+    </ul>
+
+    <h2>4. DELETE</h2>
+    <ul>
+        <li><strong>Description:</strong> Deletes an existing resource from the server.</li>
+        <li><strong>Example Usage:</strong> Remove a specific resource.</li>
+        <li><strong>Endpoint:</strong> <span class="endpoint">http://localhost:3000/posts/:id</span></li>
+        <li><strong>Response:</strong> Status message indicating success or failure.</li>
+    </ul>
+</body>
+</html>
